@@ -21,12 +21,27 @@
     <link rel="stylesheet" href="css/responsive.css">
 
 </head>
-
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+91 97409 95216", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
 <body id="wrap" data-spy='scroll' data-target='#navbar-header' data-offset='0'>
+
     <!-- preloader-wrapper start -->
-    <div class="preloader-wrapper">
+    <!-- <div class="preloader-wrapper">
         <div class="spinner"></div>
-    </div>
+    </div> -->
     <!-- preloader-wrapper end -->
 
     <!-- Header-area -->
@@ -34,14 +49,14 @@
         <!-- video background -->
         <div class="header-video-bg">
             <video class="bg-video" poster="img/bg/1.jpeg" autoplay="" loop="" muted="">
-                <source src="video/vid3.mp4">
+                <!-- <source src="video/vid3.mp4"> -->
             </video>
         </div>
 
         <!-- header-navigation -->
         <div class="container z-index">
             <nav id="navbar-header" class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">Vins FitnessTest</a>
+                <a class="navbar-brand" href="index.html">Vins Fitness</a>
                 <button class="responsive-nav-btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="ion-navicon"></span>
